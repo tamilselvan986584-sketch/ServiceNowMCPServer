@@ -14,7 +14,7 @@ async def make_nws_request(url: str) -> dict[str, Any] | None:
         "Accept": "application/json",
         "Content-Type": "application/json"
     }
-    auth = ("myadmin", "MyDevP@55w0rd")
+    auth = ("myadmin", "XXXXX")
     async with httpx.AsyncClient() as client:
         try:
             response = await client.get(url, auth=auth, headers=headers, timeout=30.0)
